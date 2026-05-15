@@ -35,21 +35,21 @@ This project runs well on platforms like **Render**, **Railway**, or **Fly.io**.
 
 ### Render Quick Setup
 1. Create a new Web Service from your GitHub repository.
-2. Set the build command to:
+2. Render will use the included `render.yaml` automatically if you deploy from the repo root.
+3. If you configure it manually, set the build command to:
    ```bash
    pip install -r requirements.txt
    ```
-3. Set the start command to:
+4. Set the start command to:
    ```bash
-   python app.py
+   gunicorn app:app
    ```
-4. Add the required model files to the repository so the Flask app can load them at startup.
 5. Deploy and open the public URL provided by the platform.
 
 ### Production Notes
 - Use a WSGI server such as Gunicorn for production deployments.
 - Turn off Flask debug mode in hosted environments.
-- Add a `Procfile` if your host requires one.
+- The repo now includes both `Procfile` and `render.yaml` for one-click Render deployment.
 
 ## 🛠️ Tech Stack
 
