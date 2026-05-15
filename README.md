@@ -2,6 +2,8 @@
 
 > A modern, professional SaaS-style web application for detecting spam emails using machine learning and AI-powered analysis.
 
+**Repository:** https://github.com/muzmilus/email-spam-classifier
+
 ![Python](https://img.shields.io/badge/python-3.8+-3776ab?logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/flask-2.0+-000000?logo=flask&logoColor=white)
 ![ML](https://img.shields.io/badge/ML-Scikit%20Learn-f7931e?logo=scikit-learn&logoColor=white)
@@ -26,6 +28,28 @@
 1. Paste an email or use sample examples
 2. Click "Analyze Email"
 3. Get instant classification (Spam or Ham) with confidence score
+
+## 🌐 Deployment
+
+This project runs well on platforms like **Render**, **Railway**, or **Fly.io**.
+
+### Render Quick Setup
+1. Create a new Web Service from your GitHub repository.
+2. Set the build command to:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Set the start command to:
+   ```bash
+   python app.py
+   ```
+4. Add the required model files to the repository so the Flask app can load them at startup.
+5. Deploy and open the public URL provided by the platform.
+
+### Production Notes
+- Use a WSGI server such as Gunicorn for production deployments.
+- Turn off Flask debug mode in hosted environments.
+- Add a `Procfile` if your host requires one.
 
 ## 🛠️ Tech Stack
 
@@ -252,9 +276,9 @@ Created as a modern, production-ready email spam classification system.
 
 ## 📞 Support
 
-- 📧 Email: [your-email@example.com]
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/email-spam-classifier/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/yourusername/email-spam-classifier/discussions)
+- 📧 Email: update this with your preferred contact address
+- 🐛 Issues: https://github.com/muzmilus/email-spam-classifier/issues
+- 💬 Discussions: https://github.com/muzmilus/email-spam-classifier/discussions
 
 ## 🚧 Roadmap
 
